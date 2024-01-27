@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS THE RANDOM NUMBER</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+    <!--splash-->
+  <div class="container">
+    
+    <div class="splash_screen">
+      <h1 class="splash_header">Welcome to the RANDOM NUMBER GUESSER WEB APP✖️!!</h1>
+  </div>
+  <!--splash-->
+    <center>
+            <div class="hold" id="exist">
+                <h1 id="heading">GUESS THE RANDOM NUMBER</h1>
+                <br>
+                <span><label>Type a number :</label></span>
+                <span><input type="number" placeholder="type a number" id="data_number"></span>
+                <br>
+                <br>
+                <span><button class="button-29" role="button" onclick="guess()">guess</button></span>
+                <span><button class="button-29" role="button" id="btn_dis_1" onclick="hint()">give hint</button></span>
+                <span><button class="popup" onclick="myFunction()">&#9432; info 
+                    <span class="popuptext" id="myPopup">try to guess the number between 1 to 15 by solving the mystery</span>
+                  </button></span>
+                <br>
+                <br>
+                <div id="hint"></div>
+                <div id="result_container">
+                  <h1 id="container_text"></h1>
+                  <img class="container_image" id="happy_display" src="Happy.png">
+                  <img class="container_image" id="sad_display"src="Sad.png">
+                </div>
+                <label id="show"></label>
+                <br>
+                <br>
+                <button class="button-29" role="button" id="change_btn" onclick="change()">give another number</button>
+            </div>
+    </center>
+    <script src="main.js"></script>
+    
+</body>

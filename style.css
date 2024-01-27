@@ -1,0 +1,199 @@
+body{
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.hold{
+    width: 800px;
+    height: 670px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    margin-top: 10px;
+    border-radius: 45px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+    border: solid 2px darkblue;
+}
+input{
+    opacity: 0.3;
+    width: 300px;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 4px 8px #888888;
+    color: black;
+    padding:5px 15px;
+}
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+label{
+    font-size: medium;
+    margin-right: 10px;
+}
+#heading{
+    margin-top: 20px;
+  margin-bottom: 45px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -4px 4px #ef3550,
+               -8px 8px #f48fb1,
+               -12px 12px #7e57c2,
+               -16px 16px #2196f3,
+               -20px 20px #26c6da,
+               -24px 24px #43a047,
+               -28px 28px #eeff41,
+               -32px 32px #f9a825,
+               -36px 36px #ff5722;
+}
+/**popup**/
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #26c6da;
+    padding: 5px 15px;
+    float : right;
+    margin-right: 10px;
+    border-radius: 20px;
+    border:none;
+  }
+  
+  /* actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /*  fade in popup */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  #result{
+    padding-top: 50px;
+    font: 30px sans-serif;
+  }
+
+  /*splash*/
+
+.splash_screen {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%); 
+    background-color: black;
+    transition: all ease-in-out 600ms;
+  }
+  .hidden{
+    transition: 0.5s;
+    display: none;
+  }
+  .splash_header {
+    height : 90%;
+    color: white;
+    font-family: consolas;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*splash*/
+  
+  /*hidden*/
+  .hold{
+    display: none;
+  }
+
+  .container_image{
+    height: 200px;
+    width: 200px;
+    display: none;
+  }
